@@ -50,7 +50,8 @@ int pack(int32_t x) {
    delta-encoding of the timestamp, then the humidity data, and
    the temperature data. Returns the block size or EOF on error.
  */
-int handleblock() { char buf[64];
+int handleblock() {
+	char buf[64];
 	int ret;
 	int32_t i;
 	
